@@ -15,6 +15,8 @@ var data = [
 
 jexcel(document.getElementById('spreadsheet'), {
     data:data,
+	rowResize:true,
+    columnDrag:true,
     columns: [
         { type: 'text', title:'Car', width:120 },
         { type: 'dropdown', title:'Make', width:200, source:[ "Alfa Romeo", "Audi", "Bmw" ] },
